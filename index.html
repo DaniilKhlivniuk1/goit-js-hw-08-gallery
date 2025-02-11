@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-     
-     <ul class="gallery js-gallery"></ul>
-
-     <!--
-       Модальное окно для полноразмерного изображения
-       Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
-     -->
-     <div class="lightbox js-lightbox ">
-       <!-- <div class="lightbox__overlay"></div> -->
- 
-       <div class="lightbox__content">
-         <img class="lightbox__image" src="" />
-       </div>
- 
-       <button
-         type="button"
-         class="lightbox__button"
-         data-action="close-lightbox"
-       >Х</button>
-     </div>
- 
-    
-
-    <script src="index.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanks</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <ul class="tanks"></ul>
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <div class="modal-cross">
+            <div class="modal-line"></div>
+            <div class="modal-line"></div>
+          </div>
+          <img class="modal-image" src="" alt="Tank">
+          <h2 class="modal-title"></h2>
+          <p class="modal-decribtion"></p>
+          <div class="modal-info">
+            <p class="modal-price"></p>
+          <p class="modal-nation"></p>
+          <p class="modal-era"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
-
-
-
-
-  

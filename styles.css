@@ -3,7 +3,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.tanks {
+.gallery {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@ body {
   justify-content: center;
 }
 
-.tanks-item {
+.gallery-item {
   width: 400px;
   background-color: #e0e0e0;
   display: flex;
@@ -26,13 +26,12 @@ body {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.tanks-item:hover {
+.gallery-item:hover {
   transform: scale(1.05);
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-.tanks-image {
+.gallery-image {
   width: 400px;
   height: 200px;
   object-fit: cover;
@@ -64,27 +63,19 @@ body {
   gap: 20px;
 }
 
-.modal-cross {
+.modal-close {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-}
-
-.modal-line {
-  position: absolute;
-  top: 14px;
-  right: -3px;
-  width: 35px;
-  height: 2.5px;
-  background-color: black;
-  transform: rotate(45deg);
-}
-
-.modal-line:last-child {
-  transform: rotate(-45deg);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  border: none;
 }
 
 .modal-image {
@@ -92,17 +83,6 @@ body {
   height: 450px;
   object-fit: cover;
 }
-
-.modal-decribtion {
-  max-width: 750px;
-  text-align: center;
-}
-
-.modal-info {
-  display: flex;
-  gap: 50px;
-}
-
 
 .is-hidden {
   opacity: 0;
